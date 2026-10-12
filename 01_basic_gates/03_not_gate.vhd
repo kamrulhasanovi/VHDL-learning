@@ -13,4 +13,5 @@ architecture rtl of not_gate is
     process (a)
 begin
 	y <= not a ;
+	  end process;
 	end rtl;
