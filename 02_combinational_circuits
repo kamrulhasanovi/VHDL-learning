@@ -1,17 +1,1 @@
-library ieee;
-use ieee.std_logic_1164.all;
 
-entity half_adder is
-port(
-	a, b: in std_logic;
-	s, c: out std_logic
-);
-end half_adder;
-
-architecture half of half_adder is
-
-begin
- s <= a xor b after 3 ns;
-c <= a and b after 2 ns;
-
-end half;
